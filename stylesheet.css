@@ -1,0 +1,351 @@
+nav {
+    grid-column:1/13;
+}
+.panel1 {
+    display:grid;
+    grid-template-columns:1fr;
+    background-image:url(images/panel1.jpg);
+}
+.panel1-text {
+    grid-column:1/13;
+    display:grid;
+}
+.panel2 {
+    display:grid;
+    grid-template-columns:1fr;
+}
+.panel2-left {
+    grid-column:1/13;
+}
+.panel2-right {
+    grid-column:1/13;
+}
+.panel3 {
+    display:grid;
+    grid-template-columns:1fr;
+    background-image:url("images/water.jpg");
+}
+.panel3-1 {
+    grid-column:1/13;
+    background-image:url("images/roughP1Aexport_adobespark(1).jpg");
+}
+.panel3-2 {
+    grid-column:1/13;
+    background-image:url("images/P1B-chabot-sara_5_10.jpg");
+}
+.panel4 {
+    display:grid;
+    grid-template-columns:1fr;
+}
+.panel4-1 {
+    grid-column:1/13;
+}
+.panel4-2 {
+    grid-column:1/13;
+}
+.panel5 {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.panel5-1 {
+    grid-column:1/13;
+}
+.panel5-2 {
+    grid-column:1/13;
+}
+.panel5-3 {
+    grid-column:1/13;
+}
+.panel5-4 {
+    grid-column:1/13;
+}
+.panel6 {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.panel6-1 {
+    grid-column:1/13;
+    background-color: peachpuff;
+}
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    display:grid;
+    grid-template-columns: 1/13;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+@media only screen and (min-width:700px) {
+.panel1 {
+    display:grid;
+    grid-template-columns:1fr;
+    background-image:url("images/panel1.jpg");
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:cover;
+    height: 954px;
+}
+.panel1-text {
+    font-size: 70px;
+    color:#eeeeee;
+    place-items:left;
+    padding:40px
+}
+nav {
+    display:flex;
+    grid-column:1/3;
+    justify-content: space-evenly;
+    padding: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family:'Source Serif Pro', serif;
+}
+a:hover {
+    color: red;
+}
+a:link {
+    color: #ffffff;
+  }
+a:visited, a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+.panel2 {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    height: 650px;
+    font-family: 'Source Serif Pro', serif;
+}
+.panel2-left {
+    grid-column:1/7;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding:40px;
+    text-align:center;
+}
+.panel2-right {
+    grid-column:7/13;
+    background-color: #ffffff;
+    padding:40px;
+    text-align:center;
+}
+.panel3 {
+    display:grid;
+    padding-top: 50px;
+    grid-template-columns:1fr 1fr;
+    height: 800px;
+    background-attachment:fixed;
+    background-repeat: no-repeat; /* The background image will not repeat */
+    background-position: right top; /* Sets the starting position of a background image horizontally and vertically. */
+    background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut off one of the edges. */
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode:darken;
+    background-image:url("images/water.jpg");
+    font-size:25px;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    color:#ffffff;
+}
+.panel3-1 {
+    grid-column:1/7;
+    height:525px;
+    width:300px;
+    margin: 60px;
+    align-content: center;
+    background-image:url("images/roughP1Aexport_adobespark(1).jpg");
+}
+.panel3-2 {
+    grid-column:7/13;
+    width:720px;
+    height:540px;
+    margin:60px;
+    background-image:url("images/P1B-chabot-sara_5_10.jpg");
+}
+.panel4 {
+    display:grid;
+    grid-template-columns:1fr;
+    height:1600px;
+    padding:30px 100px 30px 100px;
+    font-size:25px;
+    text-align: center;
+    background-color:#f2f2f2;
+}
+.panel4-1 {
+    grid-column:1/13;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.panel4-2 {
+    grid-column:1/13;
+    Overflow: hidden;
+    width: 100%;
+}
+.panel5 {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-image: url("images/grass.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat; /* The background image will not repeat */
+    background-position: right top; /* Sets the starting position of a background image horizontally and vertically. */
+    background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut off one of the edges. */
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode:darken;
+    height:900px;
+    padding:10px;
+    color:#ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+.panel5-1 {
+    grid-column:1/2;
+    font-size: 10px;
+    text-align: center;
+    justify-items: center;
+}
+.panel5-2 {
+    grid-column:2/3;
+    font-size: 10px;
+    text-align: center;
+    justify-items: center;
+}
+.panel5-3 {
+    grid-column:3/4;
+    font-size:10px;
+    text-align: center;
+    justify-items: center;
+}
+.panel5-4 {
+    grid-column:4/5;
+    font-size:10px;
+    text-align: center;
+    justify-items: center;
+}
+.panel6 {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    height: 500px;
+    font-size:25px;
+}
+.panel6-1 {
+    grid-column:1/2;
+    background-color: #eeeeee;
+    padding:40px;
+}
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    grid-column: 2/3;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}

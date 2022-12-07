@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@100&family=Lobster&family=Playfair+Display:wght@700&family=Poiret+One&family=Source+Serif+Pro:wght@200;300;400;600;900&display=swap" rel="stylesheet"> 
+    <!-- PLACE IN <head> SECTION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="panel1">
+        <nav>
+            <div class="self"><a href="#home">Home</a></div>
+            <div class="self"><a href="#about">About</a></div>
+            <div class="self"><a href="#visualdesign">Visual Design</a></div>
+            <div class="self"><a href="#webdesign">Web Design</a></div>
+            <div class="self"><a href="#ebookdesign">E-Book Design</a></div>
+            <div class="Self"><a href="#contact">Contact</a></div>
+        </nav>
+        <div class="panel1-text">
+            <p>Sara Chabot<br>
+                Portfolio Website
+            </p>
+        </div>
+    </div>
+    <div class="panel2">
+        <div class="panel2-left" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="200">
+            <h1>About</h1>
+            <p style="line-height:2em;">Hi, my name is Sara Chabot. I'm a rising senior at James Madison University studying Interactive Design and Music Industry. I'm originally from Okinawa, Japan, and I moved to the United States 5 years ago to pursue a college education. Over the last year, I've created logos, yardsigns, human size silouhette using Adobe Indesign, Adobe Photoshop, and Adobe Illustrator. I've also been studying and conducting User Research and created websites as well as designed app pages for my coursework. This summer, I had the opportunity to work as a design intern at Stable and Wise and helped create and manage their web content and designed two of their E-books. My goal is to work in the multimedia content creator and user research designer in the Music Industry.
+            </p>
+        </div> 
+        <div class="panel2-right" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="200">
+            <img src="images/about.1.png">
+        </div>
+    </div>
+    <div class="panel3">
+        <h1>SMAD201</h1>
+        <div class="panel3-1" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="200"></div>
+        <div class="panel3-2" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="200"></div>
+    </div>
+    <div class="panel4">
+        <div class="panel4-1">
+            <div style="font-family: 'Source Serif Pro', serif;">
+            <h1>Web Design</h1>
+            </div>
+            <br>
+            <p>Retail Website</p>
+            <iframe src="retail-chabot/index.html" style="border:2px black;" width="100%" height="600"></iframe>
+        </div>
+        <div class="panel4-2">
+            <p> First Website Design</p>
+            <iframe src="first-web-site-assignment-files/index.html" style="border:1px black;" width="100%" height="600"></iframe>
+        </div>
+    </div>
+    <div class="panel5">
+        <h1>SMAD 317</h1>
+        <div class="panel5-1">
+            <img src="images/Create an account.png" style="height:400px">
+        </div>
+        <div class="panel5-2">
+            <img src="images/Individual Convo.png" style="height:400px">
+        </div>
+        <div class="panel5-3">
+            <img src="images/Home1.png" style="height:400px">
+        </div>
+        <div class="panel5-4">
+            <img src="images/Account creation input info 16.png" style="height:400px">
+        </div>
+    </div>
+    <div class="panel6">
+        <div class="panel6-1">
+            <div style="text-align:center">
+            <h1>Contact Information</h1>
+            </div>
+                <h2>Addrress</h2>
+                <p>Harrisonburg, VA 22807</p><br>
+                <h2>Phone number</h2>
+                <p>571-333-3333</p>
+                <h2>Email adress</h2>
+                <p>chabotsa@jmu.edu</p>
+        </div>
+        <div class="container">
+            <div style="text-align:center">
+              <h1>Contact Me</h1>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="images/about1.jpg" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div> 
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+</body>
+</html>
